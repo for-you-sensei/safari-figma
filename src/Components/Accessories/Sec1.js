@@ -50,6 +50,7 @@ export function AccessoriesSec1({ FilterData }) {
       // console.log(Sort4);
       setAccessoriesData(Sort4);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
 
   const [AccessoriesData, setAccessoriesData] = useState(

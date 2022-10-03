@@ -50,6 +50,7 @@ export function ShoesSec1({ FilterData }) {
       // console.log(Sort4);
       setShoesData(Sort4);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
 
   const [ShoesData, setShoesData] = useState(

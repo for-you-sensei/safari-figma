@@ -56,6 +56,7 @@ export function ClothesSec1() {
       // console.log(Sort4);
       setClothesData(Sort4);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
 
   const [pageNUmber, setPageNumber] = useState(0);

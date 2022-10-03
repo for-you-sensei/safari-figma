@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./My Orders.css";
 import { ProductsData } from "../../../../Data/Data";
 import DoneIcon from "@mui/icons-material/Done";
@@ -13,9 +13,7 @@ export function MyOrders() {
     Data.setDeliveryOrder(del);
   };
 
-  const [data, setData] = useState(
-    JSON.parse(localStorage.getItem("data")) || []
-  );
+  const data = JSON.parse(localStorage.getItem("data")) || [];
 
   return (
     <>

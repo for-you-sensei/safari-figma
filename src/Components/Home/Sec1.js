@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../Styles/Home/Sec1.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -32,7 +32,7 @@ function SamplePrevArrow(props) {
 }
 
 export function Sec1() {
-  const [data, setData] = useState([
+  const data = [
     {
       id: 0,
       img: girl,
@@ -53,7 +53,7 @@ export function Sec1() {
       img: girl,
       text: logo,
     },
-  ]);
+  ];
 
   const settings = {
     dots: true,
