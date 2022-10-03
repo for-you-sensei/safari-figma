@@ -50,7 +50,7 @@ export function AccessoriesSec1({ FilterData }) {
       // console.log(Sort4);
       setAccessoriesData(Sort4);
     }
-  }, [sort]);
+  }, [sort]); // eslint-disable-line
 
   const [AccessoriesData, setAccessoriesData] = useState(
     data.products.filter((item) => {
