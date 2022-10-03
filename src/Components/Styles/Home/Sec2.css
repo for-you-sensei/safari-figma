@@ -1,0 +1,305 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#sec-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 0 10%;
+}
+
+#s2-t-1 {
+  margin-top: 4%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#s2-t-1 > p {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #000000;
+}
+
+#line {
+  width: 30%;
+  height: 2px;
+  background-color: #3a3a3a;
+}
+
+#s2-t-2 {
+  margin-top: 3%;
+  width: 90%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 146%;
+  color: #000000;
+}
+
+#s2-texts {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#container {
+  margin-top: 5%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#s2-cards {
+  width: 300px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#s2-cards:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.001);
+}
+
+#s2-c-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#s2-c-img > img {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hover_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in-out;
+}
+
+#s2-c-img:hover #hover_card {
+  transform: translateY(0);
+}
+
+#hover_card > :nth-child(1) {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+#hover_card > button {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+
+  background-color: #fff;
+  color: #000000;
+}
+
+/* #container :hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+} */
+
+#s2-c-texts {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#s2-c-texts > :first-child {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+.pagination_btns {
+  margin-top: 10%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pagination_btns > li {
+  width: 20%;
+  padding: 10px 0;
+}
+
+.pagination_btns > li > a {
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.pagination_disabled {
+  display: none;
+}
+
+.pagination_active {
+  border-bottom: 3px solid #ed165f;
+}
+
+#top {
+  cursor: pointer;
+  position: fixed;
+  right: 5%;
+  bottom: 5%;
+  width: 50px;
+  height: 40px;
+  outline: none;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+}
+
+@media (max-width: 750px) {
+  #hover-btn {
+    font-size: 10px;
+  }
+
+  #s2-t-1 > p {
+    font-size: 26px;
+  }
+
+  #s2-t-2 {
+    font-size: 18px;
+  }
+
+  #container {
+    gap: 20px;
+  }
+
+  #s2-cards {
+    width: 250px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  #s2-c-texts > :first-child {
+    font-size: 18px;
+  }
+
+  #top {
+    width: 40px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .pagination_btns {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .pagination_btns > li {
+    width: 20%;
+    padding: 6px 0;
+  }
+
+  .pagination_btns > li > a {
+    cursor: pointer;
+    padding: 0 6px;
+  }
+
+  .pagination_disabled {
+    display: none;
+  }
+
+  .pagination_active {
+    border-bottom: 3px solid #ed165f;
+  }
+}
+
+@media (max-width: 500px) {
+  #s2-t-1 > p {
+    font-size: 16px;
+  }
+
+  #s2-t-2 {
+    font-size: 14px;
+  }
+
+  #container {
+    gap: 15px;
+  }
+
+  #s2-cards {
+    width: 220px;
+    height: 350px;
+    padding: 10px;
+  }
+
+  #s2-c-texts > :first-child {
+    font-size: 14px;
+  }
+
+  #top {
+    width: 30px;
+    height: 20px;
+    font-size: 8px;
+  }
+}

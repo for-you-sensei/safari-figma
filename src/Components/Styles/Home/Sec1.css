@@ -1,0 +1,110 @@
+#sec-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5% 5%;
+  background-color: #ed165f;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+#problem {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#arrow1 {
+  margin-right: 5%;
+}
+
+#arrow2 {
+  margin-left: 5%;
+}
+
+#dots {
+  margin-top: 50%;
+  width: 15px;
+  height: 15px;
+  border: 2px solid #ffffff;
+  border-radius: 1000px;
+}
+
+#dots:active {
+  background-color: #ffffff;
+}
+
+#s1-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  height: 100%;
+}
+
+#s1-c-img-1 {
+  height: 100%;
+  width: 50%;
+}
+
+#s1-c-img-1 > img {
+  width: 100%;
+  height: 100%;
+}
+
+#s1-c-img-2 {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+}
+
+#s1-c-img-2 > img {
+  width: 100%;
+}
+
+#s1-explore {
+  margin-top: 7%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#s1-explore > p {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 117%;
+  color: #ffffff;
+}
+
+#s1-explore > img {
+  margin-top: 10px;
+  width: 2.5%;
+}
+
+#dots.active {
+  background-color: #ffffff;
+}
+
+@media (max-width: 600px) {
+  #dots {
+    width: 10px;
+    height: 10px;
+  }
+
+  #s1-explore > p {
+    font-size: 20px;
+  }
+}

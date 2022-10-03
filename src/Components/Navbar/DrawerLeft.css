@@ -1,0 +1,44 @@
+#List {
+  min-width: 300px;
+  height: 100%;
+  padding: 0;
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#nav-icon-drawer {
+  margin-top: 5%;
+  cursor: pointer;
+  width: 30%;
+}
+
+#nav-icon-drawer > img {
+  width: 100%;
+}
+
+#ListItem {
+  position: relative;
+  width: 95%;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 125%;
+  margin: 10px;
+
+  background-color: #001eff;
+}
+
+#dataLengthDrawer {
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  height: 60%;
+  z-index: 99;
+  color: #fff;
+  background: #ed115b;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+  border-radius: 1000px 0 1000px 0;
+}

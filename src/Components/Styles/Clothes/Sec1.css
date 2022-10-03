@@ -1,0 +1,778 @@
+#clothesSec1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5% 1%;
+  align-items: flex-start;
+}
+
+#line-cat {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#info-cat {
+  width: 20%;
+  height: auto;
+}
+
+#select {
+  width: 73%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#cat-line-1 {
+  margin-top: 20px;
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+}
+
+#info {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#two-cat {
+  margin-top: 2%;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#clothes-text {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 3px;
+  color: #000000;
+}
+
+.clothes-text-drawer {
+  display: none;
+}
+
+#category_container {
+  width: 300px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#category_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#category_card > button {
+  margin-top: 10px;
+  background: unset;
+  outline: none;
+  border: none;
+
+  color: #686868;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 135%;
+}
+
+#category_card > button:focus {
+  color: #ed165f;
+}
+
+#category_card > span {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 16px;
+}
+
+#size_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+#size_clear_card {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#size_clear_card > p {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#size_clear_card > button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #c4c4c4;
+  font-size: 14px;
+}
+
+#size_container > :nth-child(2) {
+  width: 100%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.5);
+  margin-top: 15px;
+}
+
+#choose_size_card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#choose_accessory_size_card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#choose_size {
+  width: 54px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#choose_shoes-size {
+  width: 70px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#choose_accessory-size {
+  width: 70px;
+  height: 32px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  cursor: pointer;
+  margin: 0 10px 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#size {
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+#choose_size input:checked ~ #size {
+  background: #ed165f;
+  color: #fff;
+}
+
+#choose_size > input {
+  display: none;
+}
+
+#choose_shoes-size input:checked ~ #size {
+  background: #ed165f;
+  color: #fff;
+}
+
+#choose_shoes-size > input {
+  display: none;
+}
+
+#choose_color {
+  width: 25%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 0 16px 16px 0;
+  cursor: pointer;
+}
+
+#choose_color > div {
+  width: 30px;
+  height: 30px;
+  background: #f3ecdb;
+  border-radius: 2px;
+  margin-right: 7px;
+}
+
+.blue {
+  background: #465ba3 !important;
+}
+
+.black {
+  background: #000000 !important;
+}
+
+.orange {
+  background: #f07b4e !important;
+}
+
+.green {
+  background: #41854d !important;
+}
+
+.brown {
+  background: #665147 !important;
+}
+
+.purple {
+  background: #893d88 !important;
+}
+
+.gold {
+  background: linear-gradient(
+    180deg,
+    #f3b121 0%,
+    rgba(255, 203, 90, 0.567708) 53.65%,
+    #ffc954 100%
+  ) !important;
+}
+
+.taupe {
+  background: #cac1b8 !important;
+}
+
+.white {
+  background: #fff !important;
+  border: 1px solid #333;
+}
+
+.pink {
+  background: #f2a1b1 !important;
+}
+
+.red {
+  background: #d23c47 !important;
+}
+
+#choose_color > p {
+  font-size: 12px;
+}
+
+#choose_color > input {
+  display: none;
+}
+
+#choose_price_card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#choose_price {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#price {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+#choose_price > input {
+  width: 27px;
+  height: 27px;
+  border: 0.5px solid #000000;
+  margin: 0 16px 16px 0;
+}
+
+#write_price_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#write_price_form > input {
+  width: 61px;
+  height: 27px;
+  outline: none;
+  padding-left: 2px;
+}
+
+#write_price_form > p {
+  font-size: 18px;
+  font-weight: 400px;
+  line-height: 120%;
+  margin: 0 10px;
+}
+
+#write_price_form > :last-child {
+  background: #ed165f;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 2px;
+  margin-left: 16px;
+}
+
+#category {
+  font-size: 20px;
+  font-weight: 600;
+  padding-top: 60px;
+}
+
+#cl-card-container {
+  margin-top: 5%;
+  width: 75%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cat-line {
+  width: 100%;
+  height: 0.5px;
+  background-color: #000000;
+}
+
+#cl-select-label {
+  position: relative;
+  width: 250px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  padding: 10px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#cl-select {
+  width: 70%;
+  background: #ffffff;
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#clothes-card {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+#cl-cards {
+  width: 300px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+#cl-cards:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transform: scale(1.001);
+}
+
+#cl-hover_card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: all 0.2s ease-in-out;
+}
+
+#cl-c-img:hover #cl-hover_card {
+  transform: translateY(0);
+}
+
+#cl-hover_card > :nth-child(1) {
+  width: 35px;
+  height: 35px;
+  border-radius: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+
+#cl-hover_card > button {
+  width: 50%;
+  height: 10%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* #container :hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+} */
+
+#cl-c-img {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cl-c-img > img {
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#cl-c-texts {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#cl-c-t-1 {
+  margin-top: 5%;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#cl-c-t-2 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 123%;
+  color: #000000;
+}
+
+#category-container-drawer {
+  position: relative;
+  padding: 5% 2%;
+  width: 300px;
+}
+
+#cat-drawer-close {
+  position: absolute;
+  top: 2%;
+  right: 5%;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background-color: unset;
+}
+
+@media (max-width: 750px) {
+  #clothes-text {
+    font-size: 26px;
+  }
+
+  .clothes-text-drawer {
+    margin-top: 20%;
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 124%;
+    color: #000000;
+  }
+
+  #category_container {
+    display: none;
+  }
+
+  #category_card > button {
+    font-size: 16px;
+  }
+
+  #size_clear_card > p {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  #size_clear_card > button {
+    font-size: 12px;
+  }
+
+  #choose_size_card {
+    margin-top: 20px;
+  }
+
+  #choose_accessory_size_card {
+    margin-top: 20px;
+  }
+
+  #size {
+    font-size: 14px;
+  }
+
+  #choose_color > p {
+    font-size: 12px;
+  }
+
+  #choose_price_card {
+    margin-top: 20px;
+  }
+
+  #price {
+    font-size: 16px;
+  }
+
+  #choose_price > input {
+    width: 20px;
+    height: 20px;
+  }
+
+  #write_price_form > input {
+    width: 60px;
+    height: 25px;
+  }
+
+  #write_price_form > p {
+    font-size: 16px;
+  }
+
+  #write_price_form > :last-child {
+    font-size: 12px;
+  }
+
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!! Important !!!!!!!!!!!!!!!!!!!!!!!!!! */
+  #category {
+    display: none;
+  }
+  /* !!!!!!!!!!!!!!!!!!!!!!!!!! Important !!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+  #cl-card-container {
+    width: 100%;
+  }
+
+  #cl-select-label {
+    width: 200px;
+    padding: 10px;
+
+    font-size: 12px;
+  }
+
+  #cl-select {
+    font-size: 12px;
+  }
+
+  #clothes-card {
+    gap: 15px;
+  }
+
+  #cl-cards {
+    width: 280px;
+    height: 430px;
+    padding: 10px;
+  }
+
+  #cl-c-t-1 {
+    font-size: 20px;
+  }
+
+  #cl-c-t-2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  #hover-btn {
+    font-size: 10px;
+  }
+
+  #clothes-text {
+    font-size: 16px;
+  }
+
+  .clothes-text-drawer {
+    font-size: 10px;
+  }
+
+  #category_card > button {
+    font-size: 13px;
+  }
+
+  #size_clear_card > p {
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  #size_clear_card > button {
+    font-size: 11px;
+  }
+
+  #choose_size_card {
+    margin-top: 20px;
+  }
+
+  #choose_accessory_size_card {
+    margin-top: 20px;
+  }
+
+  #choose_size {
+    width: 40px;
+    height: 30px;
+  }
+
+  #size {
+    font-size: 13px;
+  }
+
+  #choose_color > p {
+    font-size: 11px;
+  }
+
+  #choose_color > div {
+    width: 20px;
+    height: 20px;
+    background: #f3ecdb;
+    border-radius: 2px;
+    margin-right: 7px;
+  }
+
+  #choose_price_card {
+    margin-top: 20px;
+  }
+
+  #price {
+    font-size: 14px;
+  }
+
+  #choose_price > input {
+    width: 15px;
+    height: 15px;
+  }
+
+  #write_price_form > input {
+    width: 60px;
+    height: 25px;
+  }
+
+  #write_price_form > p {
+    font-size: 14px;
+  }
+
+  #write_price_form > :last-child {
+    font-size: 11px;
+  }
+
+  #cl-select-label {
+    width: 150px;
+    padding: 10px;
+
+    font-size: 8px;
+  }
+
+  #cl-select {
+    font-size: 8px;
+  }
+
+  #clothes-card {
+    gap: 15px;
+  }
+
+  #cl-cards {
+    width: 240px;
+    height: 400px;
+    padding: 10px;
+  }
+
+  #cl-c-t-1 {
+    font-size: 14px;
+  }
+
+  #cl-c-t-2 {
+    font-size: 14px;
+  }
+}

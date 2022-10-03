@@ -1,0 +1,41 @@
+#search {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 50px 80px;
+}
+
+#src-not-found {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#src-continue {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #ed165f;
+  background: none;
+  font-weight: 600;
+}
+
+#search_continue:hover {
+  background: #ed165f;
+  color: #fff;
+}
+
+@media (max-width: 750px) {
+  #hover-btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  #hover-btn {
+    font-size: 6px;
+  }
+}

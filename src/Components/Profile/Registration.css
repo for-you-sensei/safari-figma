@@ -1,0 +1,112 @@
+#sign {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2% 5% 10%;
+}
+
+#s-texts-1 {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#s-texts-1 > :first-child {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 120%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#s-texts-1 > :last-child {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 170%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#s-texts-2 {
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#sign-form {
+  width: 36%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#sg-f-t {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 167%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin-bottom: 40px;
+}
+
+#sign-form > input {
+  width: 100%;
+  height: 50px;
+  padding-left: 3%;
+  margin-bottom: 30px;
+}
+
+#sg-f-check {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#sg-f-check > :last-child {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
+#signIn {
+  margin-top: 20px;
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+}
+
+#signIn > button {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  background: #ed165f;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 133%;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+#forgot {
+  margin-top: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 129%;
+  letter-spacing: 0.2px;
+  text-decoration-line: underline;
+
+  color: #000000;
+}
