@@ -16,6 +16,9 @@ export function Checkout() {
   const [card, setCard] = useState();
   const [yesno, setYesNo] = useState();
 
+  console.log(card);
+  console.log(yesno);
+
   const {
     user,
     setUser,
@@ -29,7 +32,7 @@ export function Checkout() {
   } = useContext(ProductsData);
 
   const minus = (id) => {
-  setCart(() =>
+    setCart(() =>
       Cart.map((item) =>
         item.id === id
           ? {
@@ -53,7 +56,6 @@ export function Checkout() {
       )
     );
   };
-
 
   const getAddress = () => {
     setUser({
@@ -282,10 +284,7 @@ export function Checkout() {
                   <p>Cart sub-total</p>
                   <p>
                     ₦ {""}
-                    {Cart.reduce(
-                      (a, b) => a + b.quality * b.totalPrice,
-                      0
-                    )}
+                    {Cart.reduce((a, b) => a + b.quality * b.totalPrice, 0)}
                   </p>
                 </div>
                 <div
@@ -317,12 +316,12 @@ export function Checkout() {
                         (a, b) =>
                           a +
                           (b.quality * b.totalPrice -
-                            ((b.quality * b.totalPrice) / 100) * 5) ,
-                        0 +2000
+                            ((b.quality * b.totalPrice) / 100) * 5),
+                        0 + 2000
                       )
                     : Cart.reduce(
-                        (a, b) => a + (b.quality * b.totalPrice ),
-                        0 +2000
+                        (a, b) => a + b.quality * b.totalPrice,
+                        0 + 2000
                       )}
                 </p>
               </div>
