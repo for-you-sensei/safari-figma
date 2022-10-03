@@ -16,7 +16,8 @@ export function ShoesSec1({ FilterData }) {
   const [sort, setSort] = useState("all");
 
   const [open, setOpen] = useState(false);
-
+  
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     if (sort === "all") {
       setShoesData(Clothe);
@@ -50,8 +51,8 @@ export function ShoesSec1({ FilterData }) {
       // console.log(Sort4);
       setShoesData(Sort4);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const [ShoesData, setShoesData] = useState(
     data.products.filter((item) => {

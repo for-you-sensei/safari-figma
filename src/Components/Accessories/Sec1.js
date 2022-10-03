@@ -17,6 +17,7 @@ export function AccessoriesSec1({ FilterData }) {
 
   const [open, setOpen] = useState(false);
 
+  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     if (sort === "all") {
       setAccessoriesData(Accessories);
@@ -50,8 +51,8 @@ export function AccessoriesSec1({ FilterData }) {
       // console.log(Sort4);
       setAccessoriesData(Sort4);
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sort]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const [AccessoriesData, setAccessoriesData] = useState(
     data.products.filter((item) => {
