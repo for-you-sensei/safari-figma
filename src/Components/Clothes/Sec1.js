@@ -22,8 +22,7 @@ export function ClothesSec1() {
       return item.type === "clothes";
     })
   );
-  
-  /* eslint-disable react-hooks/exhaustive-deps */
+
   useEffect(() => {
     if (sort === "all") {
       setClothesData(ClothesData);
@@ -58,7 +57,6 @@ export function ClothesSec1() {
       setClothesData(Sort4);
     }
   }, [sort]);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
 
   const [pageNUmber, setPageNumber] = useState(0);
   const usersPerPage = 12;
