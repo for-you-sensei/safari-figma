@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useContext } from "react";
 import "./Cart.css";
 import { ProductsData } from "../Data/Data";
@@ -128,9 +128,13 @@ export function Cart() {
                         <option value="5">5</option>
                       </select> */}
 
-                      <button id="count-btn" onClick={() => plus(item.id)}>+</button>
+                      <button id="count-btn" onClick={() => plus(item.id)}>
+                        +
+                      </button>
                       <p id="count-text">{item.quality}</p>
-                      <button id="count-btn" onClick={() => minus(item.id)}>-</button>
+                      <button id="count-btn" onClick={() => minus(item.id)}>
+                        -
+                      </button>
                     </td>
                     <td id="c-c-tr-td-3">
                       <p> ₦ {item.totalPrice} </p>

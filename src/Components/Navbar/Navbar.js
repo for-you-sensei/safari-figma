@@ -2,14 +2,12 @@ import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../Assets/Icons/Navbar/Logo.svg";
-import search from "../Assets/Icons/Navbar/search.png";
 import PersonIcon from "@mui/icons-material/Person";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import MenuIcon from "@mui/icons-material/Menu";
 import { ProductsData } from "../Data/Data";
 import { DrawerLeft } from "./DrawerLeft";
-import { Button } from "@mui/material";
 import { toast } from "react-toastify";
 import SearchIcon from "@mui/icons-material/Search";
 // import { DrawerLeft } from "./Drawer/DraweLeft";
@@ -18,7 +16,7 @@ export function Navbar() {
   // const [profil, setProfil] = useState(false);
   const Data = useContext(ProductsData);
   const [open, setOpen] = useState(false);
-  const { setSearch, favorite, Cart } = useContext(ProductsData);
+  const { setSearch } = useContext(ProductsData);
   const navigate = useNavigate();
 
   const searchFun = (e) => {

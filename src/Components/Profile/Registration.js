@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Registration.css";
 import { pink } from "@mui/material/colors";
 import Checkbox from "@mui/material/Checkbox";
