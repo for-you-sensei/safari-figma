@@ -56,7 +56,7 @@ export function ClothesSec1() {
       // console.log(Sort4);
       setClothesData(Sort4);
     }
-  }, [sort]);
+  }, [sort]);// eslint-disable-line
 
   const [pageNUmber, setPageNumber] = useState(0);
   const usersPerPage = 12;
