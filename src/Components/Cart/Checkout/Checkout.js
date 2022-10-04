@@ -374,14 +374,14 @@ export function Checkout() {
           prices will be hidden on the receipt.
         </p>
 
-        <Button
+        {/* <Button
           id="place_order"
-          // onClick={() => {
-          //   setOpen(true);
-          // }}
+          onClick={() => {
+            setOpen(true);
+          }}
         >
           Open Address
-        </Button>
+        </Button> */}
 
         <Button
           id="place_order"
