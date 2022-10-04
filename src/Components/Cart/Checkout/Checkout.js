@@ -1,17 +1,17 @@
 import React, { useContext, useState } from "react";
 import { ProductsData } from "../../Data/Data";
 import "./Checkout.css";
-import CheckIcon from "@mui/icons-material/Check";
+// import CheckIcon from "@mui/icons-material/Check";
 import DoneIcon from "@mui/icons-material/Done";
 import { NavLink } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Button, Drawer } from "@mui/material";
+import { Button } from "@mui/material";
 
 export function Checkout() {
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   const [gift, setGift] = useState(false);
-  const [tick, setTick] = useState(false);
+  // const [tick, setTick] = useState(false);
 
   const [card, setCard] = useState();
   const [yesno, setYesNo] = useState();
@@ -20,15 +20,15 @@ export function Checkout() {
   console.log(yesno);
 
   const {
-    user,
-    setUser,
+    // user,
+    // setUser,
     setCart,
     Cart,
     setDiscount,
     discount,
     setDeliveryOrder,
-    address,
-    setAddress,
+    // address,
+    // setAddress,
   } = useContext(ProductsData);
 
   const minus = (id) => {
@@ -57,30 +57,30 @@ export function Checkout() {
     );
   };
 
-  const getAddress = () => {
-    setUser({
-      ...user,
-      id: user.id,
-      name: user.name,
-      surname: user.surname,
-      email: user.email,
-      address: user.address,
-      state: user.state,
-      city: user.city,
-      phone: user.phone,
-    });
-  };
+  // const getAddress = () => {
+  //   setUser({
+  //     ...user,
+  //     id: user.id,
+  //     name: user.name,
+  //     surname: user.surname,
+  //     email: user.email,
+  //     address: user.address,
+  //     state: user.state,
+  //     city: user.city,
+  //     phone: user.phone,
+  //   });
+  // };
 
-  const inputChange = (e) => {
-    setAddress({
-      ...user,
-      [e.target.name]: e.target.value,
-    });
-  };
+  // const inputChange = (e) => {
+  //   setAddress({
+  //     ...user,
+  //     [e.target.name]: e.target.value,
+  //   });
+  // };
 
   return (
     <div id="checkout">
-      <Drawer
+      {/* <Drawer
         className="drawer"
         open={open}
         onClose={() => {
@@ -98,20 +98,30 @@ export function Checkout() {
             <p>Email</p>
             <input
               type="text"
+              name="email"
+              value={address.email}
+              onChange={inputChange}
+            />
+          </label>
+          <label>
+            <p>Name</p>
+            <input
+              type="text"
               name="name"
               value={address.name}
               onChange={inputChange}
             />
           </label>
-          {/* <label>
-          <p>Full name</p>
-          <input
-            type="text"
-            name="surname"
-            value={address.surname}
-            onChange={inputChange}
-          />
-        </label> */}
+
+          <label>
+            <p>Surname</p>
+            <input
+              type="text"
+              name="surname"
+              value={address.surname}
+              onChange={inputChange}
+            />
+          </label>
           <label>
             <p>Address</p>
             <textarea
@@ -166,7 +176,7 @@ export function Checkout() {
             Set default shipping address
           </button>
         </form>
-      </Drawer>
+      </Drawer> */}
 
       <div id="devery-container">
         <div id="delivery_card">
@@ -366,9 +376,9 @@ export function Checkout() {
 
         <Button
           id="place_order"
-          onClick={() => {
-            setOpen(true);
-          }}
+          // onClick={() => {
+          //   setOpen(true);
+          // }}
         >
           Open Address
         </Button>
