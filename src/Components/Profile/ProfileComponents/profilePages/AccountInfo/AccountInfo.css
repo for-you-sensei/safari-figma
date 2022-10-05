@@ -26,7 +26,16 @@
 }
 
 #accInfo-form {
-  width: 40%;
+  width: 450px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 2% 3%;
+  gap: 32px;
+}
+
+#accInfo-form-2 {
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -119,4 +128,13 @@
   line-height: 133%;
   letter-spacing: 2px;
   color: #ffffff;
+}
+
+@media (max-width: 850px) {
+  #accInfo {
+    margin-left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
 }

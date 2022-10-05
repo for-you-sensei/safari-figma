@@ -40,9 +40,9 @@ export function MyOrders() {
                 <div id="order_card_detail">
                   <figure id="order_figure">
                     <img src={item.productImg} alt="" />
-                    <div id="delivered_card">
+                    {/* <div id="delivered_card">
                       <p> Delivered </p>
-                    </div>
+                    </div> */}
                   </figure>
 
                   <div id="order_detail_text">
@@ -69,7 +69,16 @@ export function MyOrders() {
                   <p>Delivery method</p>
                   <p>Door delivery</p>
                   <p>Shipping address</p>
-                  <p>Ayokunle Oriolowo 4, Barnawa Close, Barnawa Kaduna.</p>
+                  <div>
+                    {data.map((item) => {
+                      return (
+                        <p key={item.id}>
+                          {item.name} {""} {item.surname}, {""} {item.address}{" "}
+                          {""} {item.state}
+                        </p>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             );
@@ -110,9 +119,9 @@ export function MyOrders() {
                 <div id="order_card_detail">
                   <figure id="order_figure">
                     <img src={item.productImg} alt="" />
-                    <div className="delivered_card">
+                    {/* <div className="delivered_card">
                       <p>To arrive</p>
-                    </div>
+                    </div> */}
                   </figure>
 
                   <div id="order_detail_text">

@@ -148,6 +148,23 @@ export function AccountInfo() {
             {/* </div> */}
           </div>
 
+          <div id={change ? "accInfo-form-2" : "accInfo-form-none"}>
+            <label id="FormInput">
+              <span>Current Password</span>
+              <input type="password" name="currentPass" />
+            </label>
+
+            <label id="FormInput">
+              <span>New password</span>
+              <input type="password" name="newPass" />
+            </label>
+
+            <label id="FormInput">
+              <span>Confirm new password</span>
+              <input type="password" name="confirmNewPass" />
+            </label>
+          </div>
+
           {change ? (
             <Button
               type="submit"
@@ -180,23 +197,6 @@ export function AccountInfo() {
             </Button>
           )}
         </form>
-
-        <from id={change ? "accInfo-form" : "accInfo-form-none"}>
-          <label id="FormInput">
-            <span>Current Password</span>
-            <input type="password" name="currentPass" />
-          </label>
-
-          <label id="FormInput">
-            <span>New password</span>
-            <input type="password" name="newPass" />
-          </label>
-
-          <label id="FormInput">
-            <span>Confirm new password</span>
-            <input type="password" name="confirmNewPass" />
-          </label>
-        </from>
       </div>
     </div>
   );
