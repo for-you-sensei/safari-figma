@@ -1,13 +1,15 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./MyFav.css";
 import HighlightOffIcon from "@mui/icons-material/HighlightOff";
 import { Button } from "@mui/material";
 import { ProductsData } from "../../../../Data/Data";
 import { toast } from "react-toastify";
+import { DrawerOpen } from "../DrawerOpen";
 
 export function MyFav() {
   const Data = useContext(ProductsData);
   // console.log(Data.Fav);
+  const [open, setOpen] = useState(false);
 
   const deleteData = (i) => {
     // let del = Data.Fav.filter((item, index) => index !== i && item.like === false);
@@ -33,8 +35,18 @@ export function MyFav() {
 
   return (
     <div id="fav">
-      <p id="info">My Favorites</p>
+      <button
+        id="open-dash"
+        onClick={() => {
+          setOpen(true);
+        }}
+      >
+        Open Dashboard
+      </button>
 
+      <DrawerOpen open={open} setOpen={setOpen} />
+
+      <p id="info">My Favorites</p>
       {Data.Fav.length === 0 ? (
         <p id="noProduct">No Product</p>
       ) : (

@@ -1,11 +1,8 @@
 #accInfo {
   margin-left: 50px;
   width: 75%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  margin: 30px 10px;
-  overflow-y: scroll;
+  height: 100%;
+  padding: 20px 0;
 }
 
 #accInfo-t-1 {

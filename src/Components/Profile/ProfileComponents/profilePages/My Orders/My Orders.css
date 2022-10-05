@@ -1,10 +1,11 @@
 #order {
   margin-left: 50px;
-  padding: 32px;
   width: 75%;
+  height: 100%;
+  padding: 20px 0;
 }
 
-#order > :nth-child(1) {
+#order > :nth-child(2) {
   font-size: 24px;
 }
 

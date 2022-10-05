@@ -7,7 +7,7 @@
 
 #nav-2-address {
   width: 300px;
-  height: 100vh;
+  height: 400px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
 
 #addresses {
   width: 100%;
-  max-height: calc(100vh - 250px);
+  max-height: 400px;
   overflow-y: scroll;
 }
 
@@ -111,7 +111,7 @@
 #addr-btn {
   cursor: pointer;
   margin-top: 30px;
-  width: 20%;
+  width: 250px;
   height: 40px;
   border: none;
   outline: none;
@@ -225,6 +225,7 @@
   padding: 8px 15px;
   background-color: unset;
   outline: none;
+  display: none;
   border: 1px solid #ed165f;
 
   font-weight: 600;
@@ -243,6 +244,10 @@
     margin-left: 0;
     width: 100%;
     padding: 20px;
+  }
+
+  #open-dash {
+    display: flex;
   }
 
   #address-t-1 {
