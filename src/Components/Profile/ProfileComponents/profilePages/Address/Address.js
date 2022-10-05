@@ -1,9 +1,17 @@
 import React, { useState, useContext, useEffect } from "react";
 import "./Address.css";
 import { ProductsData } from "../../../../Data/Data";
+import { Drawer } from "@mui/material";
+import { NavLink } from "react-router-dom";
+import CardGiftcardIcon from "@mui/icons-material/CardGiftcard";
+import Person2Icon from "@mui/icons-material/Person2";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import MenuBookIcon from "@mui/icons-material/MenuBook";
 
 export function Address() {
   const [modal, setModal] = useState(false);
+  const [open, setOpen] = useState(false);
+
   const openModal = () => {
     setUser({
       id: "",
@@ -104,6 +112,48 @@ export function Address() {
 
   return (
     <div id="address">
+      <Drawer
+        className="drawer"
+        open={open}
+        onClose={() => {
+          setOpen(false);
+        }}
+      >
+        <div id="nav-2-address">
+          <p>ACCOUNT DASHBOARD</p>
+          <div id="n2-links">
+            <NavLink to="/accaunt/profile">
+              <Person2Icon />
+              Account Information
+            </NavLink>
+
+            <NavLink to="/accaunt/address">
+              <MenuBookIcon />
+              Address Book
+            </NavLink>
+
+            <NavLink to="/accaunt/my_orders">
+              <CardGiftcardIcon />
+              My Orders
+            </NavLink>
+
+            <NavLink to="/accaunt/my_favorites">
+              <FavoriteIcon />
+              My Favorites
+            </NavLink>
+          </div>
+        </div>
+      </Drawer>
+
+      <button
+        id="open-dash"
+        onClick={() => {
+          setOpen(true);
+        }}
+      >
+        Open Dashboard
+      </button>
+
       <p id="address-t-1">Address Book</p>
       <div id="addresses">
         {data1.map((item, index) => (

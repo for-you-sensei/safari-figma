@@ -1,7 +1,21 @@
 #address {
+  margin-left: 50px;
   width: 75%;
   height: 100%;
   padding-top: 20px;
+}
+
+#nav-address {
+  width: 300px;
+}
+
+#nav-2-address {
+  width: 300px;
+  height: 100vh;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
 }
 
 #address-t-1 {
@@ -190,4 +204,22 @@
   font-size: 16px;
   line-height: 140%;
   letter-spacing: 1px;
+}
+
+#open-dash {
+  cursor: pointer;
+  padding: 8px 15px;
+  background-color: unset;
+  outline: none;
+  border: 1px solid #ed165f;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 145%;
+  color: #ed165f;
+}
+
+#open-dash:hover {
+  background-color: #ed165f;
+  color: #ffffff;
 }
