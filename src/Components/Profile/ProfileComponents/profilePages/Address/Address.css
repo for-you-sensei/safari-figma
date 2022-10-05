@@ -2,11 +2,7 @@
   margin-left: 50px;
   width: 75%;
   height: 100%;
-  padding-top: 20px;
-}
-
-#nav-address {
-  width: 300px;
+  padding: 20px 0;
 }
 
 #nav-2-address {
@@ -18,7 +14,25 @@
   padding: 35px;
 }
 
+#nav-2-address > :first-child {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 112%;
+  letter-spacing: 0.2px;
+  color: #000000;
+  margin-bottom: 20%;
+}
+
+#nav-2-address > a {
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 118%;
+  letter-spacing: 0.2px;
+  color: #000000;
+}
+
 #address-t-1 {
+  margin-top: 10px;
   font-weight: 400;
   font-size: 24px;
   line-height: 140%;
@@ -222,4 +236,85 @@
 #open-dash:hover {
   background-color: #ed165f;
   color: #ffffff;
+}
+
+@media (max-width: 850px) {
+  #address {
+    margin-left: 0;
+    width: 100%;
+    padding: 20px;
+  }
+
+  #address-t-1 {
+    font-size: 22px;
+  }
+
+  #c-add-t-1 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  #c-add-t-2 {
+    font-size: 12px;
+  }
+
+  #address-btns {
+    width: 200px;
+  }
+
+  #address-btns > button {
+    width: 40%;
+    font-size: 12px;
+  }
+
+  #addr-btn {
+    width: 150px;
+    font-size: 12px;
+  }
+
+  #open-dash {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  #address-t-1 {
+    font-size: 18px;
+  }
+
+  #c-add-t-1 {
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+
+  #c-add-t-2 {
+    font-size: 8px;
+  }
+
+  #card-address {
+    margin-top: 20px;
+    min-height: 160px;
+    padding: 20px;
+  }
+
+  #address-btns {
+    width: 160px;
+  }
+
+  #address-btns > button {
+    font-size: 8px;
+  }
+
+  #addr-btn {
+    max-width: 100%;
+    width: 120px;
+    height: 30px;
+    font-size: 8px;
+  }
+
+  #open-dash {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
 }

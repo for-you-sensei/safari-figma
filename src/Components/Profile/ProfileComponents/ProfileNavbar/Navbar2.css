@@ -49,3 +49,9 @@
   background: #ed165f;
   color: #fff;
 }
+
+@media (max-width: 850px) {
+  #nav-2 {
+    display: none;
+  }
+}
