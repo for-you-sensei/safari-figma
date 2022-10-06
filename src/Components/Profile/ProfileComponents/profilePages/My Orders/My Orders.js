@@ -160,7 +160,7 @@ export function MyOrders() {
                     )}
                   </p>
                   <p>
-                    Total - ₦{" "}
+                    {/* Total - ₦{" "}
                     {Data.discount
                       ? Data.Cart.reduce(
                           (a, b) =>
@@ -173,7 +173,8 @@ export function MyOrders() {
                       : Data.Cart.reduce(
                           (a, b) => a + (b.quality * b.totalPrice + 2000),
                           0
-                        )}
+                        )} */}
+                    Total - ₦ {item.quality * item.totalPrice + 2000}
                   </p>
                 </div>
                 <div id="order_delivery_method">
