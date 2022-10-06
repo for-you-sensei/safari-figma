@@ -1,6 +1,6 @@
 #List {
   min-width: 300px;
-  height: 100%;
+  max-height: 600px;
   padding: 0;
   background-color: #000;
   display: flex;
