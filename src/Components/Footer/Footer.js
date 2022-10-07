@@ -56,7 +56,7 @@ export function Footer() {
       </div>
 
       <div id="ft-texts-2">
-        <p>794 NothingGreen RoseNotville, AC 37659)</p>
+        <p>Created By Sensei in 2022</p>
         <p>+998 99 999 99 99 /|\</p>
         <p>nsrt@gmail.com</p>
       </div>
