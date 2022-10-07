@@ -178,7 +178,7 @@ export function Checkout() {
         </form>
       </Drawer> */}
 
-      <div id="devery-container">
+      <div id="delivery_container">
         <div id="delivery_card">
           <div id="delivery_method">
             <figure id="checkout_figure">

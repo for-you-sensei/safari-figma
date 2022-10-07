@@ -6,6 +6,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 64px 57px;
+  gap: 20px;
 }
 
 #checkout_form {
@@ -89,7 +90,8 @@
 }
 
 #delivery_container {
-  width: 35%;
+  width: 450px;
+  max-width: 100%;
 }
 
 #delivery_card {
@@ -200,7 +202,8 @@
 }
 
 #order_summary_container {
-  width: 35%;
+  max-width: 100%;
+  width: 450px;
 }
 
 #oreder_summary_card {
@@ -440,4 +443,14 @@
 
 .card_discount.active {
   display: flex !important;
+}
+
+@media (max-width: 1000px) {
+  #checkout {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
 }
