@@ -71,7 +71,7 @@ export function DrawerLeft({ open, setOpen, show }) {
           </ListItemButton>
         </NavLink>
 
-        <NavLink id="ListItem" to="/signIn">
+        <NavLink id="ListItem" to="/accaunt/profile">
           <ListItemButton
             onClick={() => {
               setOpen(false);
