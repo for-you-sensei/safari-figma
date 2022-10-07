@@ -125,7 +125,8 @@ export function Navbar() {
           <NavLink
             id="nav-icons"
             // to={profil ? "/accaunt/accaunt_info" : "/signIn"}
-            to="/signIn"
+            // to="/signIn"
+            to="/accaunt/profile"
           >
             <PersonIcon />
           </NavLink>
