@@ -32,13 +32,10 @@ export function Checkout() {
   } = useContext(ProductsData);
 
   const minus = (id) => {
-    setCart(() =>
+    setCart((Cart) =>
       Cart.map((item) =>
         item.id === id
-          ? {
-              ...item,
-              quality: item.quality > 1 ? item.quality-- : 1,
-            }
+          ? { ...item, quality: item.quality > 1 ? item.quality - 1 : 1 }
           : item
       )
     );

@@ -32,14 +32,24 @@ export function Cart() {
     }
   };
 
+  // const minus = (id) => {
+  //   Data.setCart(() =>
+  //     Data.Cart.map((item) =>
+  //       item.id === id
+  //         ? {
+  //             ...item,
+  //             quality: item.quality > 1 ? item.quality-- : 1,
+  //           }
+  //         : item
+  //     )
+  //   );
+  // };
+
   const minus = (id) => {
-    Data.setCart(() =>
-      Data.Cart.map((item) =>
+    Data.setCart((Cart) =>
+      Cart.map((item) =>
         item.id === id
-          ? {
-              ...item,
-              quality: item.quality > 1 ? item.quality-- : 1,
-            }
+          ? { ...item, quality: item.quality > 1 ? item.quality - 1 : 1 }
           : item
       )
     );
